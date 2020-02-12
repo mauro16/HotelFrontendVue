@@ -1,6 +1,8 @@
 <template>
   <v-app>
+    <Load />
     <Header />
+    <Footer />
     <v-container>
       <router-view></router-view>
     </v-container>
@@ -8,10 +10,12 @@
 </template>
 
 <script>
+import Load from "@/components/Load.vue";
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
-  components: { Header },
+  components: { Load, Header, Footer },
   data() {
     return {
       //

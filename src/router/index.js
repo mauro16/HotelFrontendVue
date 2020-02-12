@@ -9,7 +9,7 @@ const routes =
       path: "/",
       name: "Index",
       redirect: '/main',
-      component: () => import("../views/Index.vue"),
+      component: () => import("../views/index/Index.vue"),
     },
     {
       path: "/about",
